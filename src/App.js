@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Menu from './components/Menu';
+import Header from './components/Header';
+import { Box, Container } from '@mui/material';
+import OurValues from './components/OurValues';
+import Services from './components/Services';
+import Footer from './components/Footer';
+import Team from './components/Team';
+import Contact from './components/Contact';
+import NewsLetter from './components/NewsLetter';
+import Blog from './components/Blog';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* menu */}
+      <Menu />
+
+      {/* header */}
+      <Header />
+
+      {/* nos valeur */}
+      <OurValues />
+
+      {/* Services */}
+      <section id='services'>
+        <Services />
+      </section>
+
+      {/* team */}
+      <section id='team'>
+        <Team />
+      </section>
+
+      {/* contact */}
+      <section id='contact'>
+        <Contact />
+      </section>
+
+      {/* blog */}
+      <section id='blog'>
+        <Blog />
+      </section>
+
+      {/*newsletter */}
+      <NewsLetter />
+
+      {/* footer */}
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
