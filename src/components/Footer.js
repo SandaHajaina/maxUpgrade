@@ -14,12 +14,6 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(6),
         textAlign: "center", // Alignement du contenu au centre
     },
-    aboutUs: {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        marginBottom: theme.spacing(2),
-    },
     logo: {
         width: 100,
         height: 'auto',
@@ -41,7 +35,7 @@ export default function Footer() {
             <Container maxWidth="xlg">
                 <Grid container spacing={5}>
                     <Grid item xs={12} md={4}>
-                        <div className={classes.aboutUs}>
+                        <div>
                             {/* Ici, vous pouvez insérer votre logo à la place du texte "About Us" */}
                             <img className={classes.logo} src="logo.png" alt="Logo" />
                         </div>
