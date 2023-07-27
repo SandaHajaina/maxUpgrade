@@ -5,7 +5,7 @@ import { colors } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     header: {
-        height: '60vh', // Hauteur à 40vh en tenant compte de la hauteur de l'AppBar (64px)
+        height: '60vh',
         display: 'flex',
         alignItems: 'center',
         color: '#ffffff',

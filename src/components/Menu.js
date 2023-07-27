@@ -59,9 +59,9 @@ const Menu = () => {
         setOpen(isOpen);
     };
 
-    const menuItems = ['Services', 'Team', 'Contact', 'Blog'];
+    //const menuItems = ['Services', 'Team', 'Contact', 'Blog'];
 
-    const menuI = [
+    const menuItems = [
         { text: 'Services', href: '#services' },
         { text: 'Team', href: '#team' },
         { text: 'Contact', href: '#contact' },
@@ -77,7 +77,7 @@ const Menu = () => {
                     </div>
                     <div className={classes.menuContainer}>
                         <List component="nav">
-                            {menuI.map((text) => (
+                            {menuItems.map((text) => (
                                 <ListItem button>
                                     <Link href={text.href} color='#fff' underline='none'>
                                         <ListItemText primary={text.text} />
@@ -106,9 +106,11 @@ const Menu = () => {
                 </div>
                 <List className={classes.drawer}>
                     {menuItems.map((text) => (
-                        <ListItem button key={text}>
-                            <ListItemText primary={text} />
-                        </ListItem>
+                        <Link href={text.href} color='#1d5e85' underline='none'>
+                            <ListItem button>
+                                <ListItemText primary={text.text} />
+                            </ListItem>
+                        </Link>
                     ))}
                 </List>
             </Drawer>
