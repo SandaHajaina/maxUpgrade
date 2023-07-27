@@ -17,9 +17,12 @@ const useStyles = makeStyles((theme) => ({
     logo_footer: {
         width: 100,
         height: 'auto',
-        display: 'inline !important',
+        //display: 'inline !important',
         marginRight: theme.spacing(1),
     },
+    __logo__footer: {
+        display: 'inline !important'
+    }
 }));
 
 export default function Footer() {
@@ -34,7 +37,7 @@ export default function Footer() {
                 <Grid container spacing={5}>
                     <Grid item xs={12} md={4}>
                         {/* Ici, vous pouvez insérer votre logo à la place du texte "About Us" */}
-                        <img className={classes.logo_footer} src="logo.png" alt="Logo" />
+                        <img className={`${classes.logo_footer} ${classes.__logo__footer}`} src="logo.png" alt="Logo" />
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <Typography variant="h6" color="secondary.main" gutterBottom>
