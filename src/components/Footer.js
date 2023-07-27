@@ -40,13 +40,13 @@ export default function Footer() {
         >
             <Container maxWidth="xlg">
                 <Grid container spacing={5}>
-                    <Grid item xs={12} sm={4}>
+                    <Grid item xs={12} md={4}>
                         <div className={classes.aboutUs}>
                             {/* Ici, vous pouvez insérer votre logo à la place du texte "About Us" */}
                             <img className={classes.logo} src="logo.png" alt="Logo" />
                         </div>
                     </Grid>
-                    <Grid item xs={12} sm={4}>
+                    <Grid item xs={12} md={4}>
                         <Typography variant="h6" color="secondary.main" gutterBottom>
                             Contact Us
                         </Typography>
@@ -57,7 +57,7 @@ export default function Footer() {
                             Phone: +261 341 234 567
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} sm={4}>
+                    <Grid item xs={12} md={4}>
                         <Typography variant="h6" color="secondary.main" gutterBottom>
                             Follow Us
                         </Typography>
