@@ -23,7 +23,15 @@ const Header = () => {
         <Box sx={{ bgcolor: '#1d5e85' }}>
             <Container>
                 <div className={classes.header}>
-                    <Typography variant='p' sx={{ fontSize: "4rem", fontWeight: "bold" }} >
+                    <Typography variant='p' sx={{
+                        fontSize: {
+                            xs: '2rem', // Font size for xs (extra small) screens
+                            sm: '3rem', // Font size for sm (small) screens
+                            md: '4rem', // Font size for md (medium) screens
+                            lg: '5rem', // Font size for lg (large) screens
+                        },
+                        fontWeight: "bold"
+                    }} >
                         Climb to Success with Elevated Communication.
                     </Typography>
                 </div>
