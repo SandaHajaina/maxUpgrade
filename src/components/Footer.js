@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     logo_footer: {
         width: 100,
         height: 'auto',
-        //display: 'inline !important',
+        display: 'inline !important',
         marginRight: theme.spacing(1),
     },
 }));
@@ -29,9 +29,6 @@ export default function Footer() {
         <Box
             component="footer"
             className={classes.footer}
-            sx={{
-
-            }}
         >
             <Container maxWidth="xlg">
                 <Grid container spacing={5}>
