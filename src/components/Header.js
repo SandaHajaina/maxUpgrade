@@ -31,7 +31,7 @@ const Header = () => {
                             lg: '5rem', // Font size for lg (large) screens
                         },
                         fontWeight: "bold"
-                    }} >
+                    }}>
                         Climb to Success with Elevated Communication.
                     </Typography>
                 </div>
