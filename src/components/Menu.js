@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
         height: '12vh',
         marginRight: '10px',
     },
+    __logo__header: {
+        display: 'flex'
+    },
     menuContainer: {
         [theme.breakpoints.down('sm')]: {
             display: 'none',
@@ -37,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     },
     drawer: {
         [theme.breakpoints.up('md')]: {
-            marginTop: '64px', // Pour dégager l'espace de l'AppBar sur les grands écrans
+            marginTop: '14px', // Pour dégager l'espace de l'AppBar sur les grands écrans
         },
     },
     closeButton: {
@@ -73,7 +76,7 @@ const Menu = () => {
             <AppBar className={classes.appBar}>
                 <Toolbar>
                     <div className={classes.title}>
-                        <img className={classes.logo} src="logo.png" alt="Logo" />
+                        <img className={`${classes.logo} ${classes.__logo__header}`} src="logo.png" alt="Logo" />
                     </div>
                     <div className={classes.menuContainer}>
                         <List component="nav">
