@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     logo: {
         width: 100,
         height: 'auto',
-        display: 'block !important',
+        display: 'inline !important',
         marginRight: theme.spacing(1),
     },
 }));
