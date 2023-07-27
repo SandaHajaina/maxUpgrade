@@ -10,6 +10,10 @@ body {
     padding: 0 !important;
 }
 
+.css-y1gt6f {
+    padding-bottom: 20px;
+}
+
 @media (min-width: 960px) {
     .jss2 {
         display: block !important;
