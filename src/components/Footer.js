@@ -35,7 +35,7 @@ export default function Footer() {
             <Container maxWidth="xlg">
                 <Grid container spacing={5}>
                     <Grid item xs={12} md={4}>
-                        <Box sx={{ display: 'block' }}>
+                        <Box sx={{ display: 'block !important' }}>
                             {/* Ici, vous pouvez insérer votre logo à la place du texte "About Us" */}
                             <img className={classes.logo} src="logo.png" alt="Logo" />
                         </Box>
