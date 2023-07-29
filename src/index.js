@@ -4,6 +4,8 @@ import App from './App';
 import { CssBaseline } from '@material-ui/core';
 import './global.css';
 import { ThemeProvider, createTheme } from '@mui/material';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './components/i18n';
 
 const theme = createTheme({
   palette: {
@@ -35,7 +37,9 @@ root.render(
   <React.StrictMode>
     <CssBaseline />
     <ThemeProvider theme={theme}>
-      <App />
+      <I18nextProvider i18n={i18n}>
+        <App />
+      </I18nextProvider>
     </ThemeProvider>
   </React.StrictMode>
 );

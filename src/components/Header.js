@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box, Button, Container, Link, Typography } from '@mui/material';
-import { colors } from '@material-ui/core';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles((theme) => ({
     header: {
@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
     const classes = useStyles();
 
+    const { t } = useTranslation();
+
     return (
         <Box sx={{ bgcolor: '#1d5e85' }}>
             <Container>
@@ -34,15 +36,12 @@ const Header = () => {
                             lineHeight: '1',
                             fontWeight: "bold"
                         }}>
-                            Climb to Success with Elevated Communication.
+                            {t('header.slogan')}
                         </Typography>
                         <br />
                         <Box marginTop={4} marginBottom={5}>
                             <Typography variant='p'>
-                                Your digital success is in good hands! As digital communication experts,
-                                we offer top-notch solutions in community management, impactful graphic
-                                design, and strategic digital marketing to enhance your online presence.
-                                Entrust us with your vision, and together, let's reach new heights!
+                                {t('header.text')}
                             </Typography>
                         </Box>
                         <Link href={'#contact'} >
@@ -61,7 +60,7 @@ const Header = () => {
                                 }
                             }}
                                 variant="contained" size="large">
-                                Contact us
+                                {t('header.button')}
                             </Button>
                         </Link>
                     </div>

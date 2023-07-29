@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListIt
 import { Menu as MenuIcon, Close as CloseIcon } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Link } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -62,13 +63,19 @@ const Menu = () => {
         setOpen(isOpen);
     };
 
-    //const menuItems = ['Services', 'Team', 'Contact', 'Blog'];
+    // language transalation i18n
+    const { t, i18n } = useTranslation();
+
+    const handleLanguageChange = (event) => {
+        const selectedLanguage = event.target.value;
+        i18n.changeLanguage(selectedLanguage);
+    };
 
     const menuItems = [
-        { text: 'Services', href: '#services' },
-        { text: 'Team', href: '#team' },
-        { text: 'Contact', href: '#contact' },
-        { text: 'Blog', href: '#blog' }
+        { text: t('header.menu.1'), href: '#services' },
+        { text: t('header.menu.2'), href: '#team' },
+        { text: t('header.menu.3'), href: '#contact' },
+        { text: t('header.menu.4'), href: '#blog' }
     ];
 
     return (
@@ -87,6 +94,13 @@ const Menu = () => {
                                     </Link>
                                 </ListItem>
                             ))}
+
+                            {/* Sélecteur de langue */}
+                            <select onChange={handleLanguageChange}>
+                                <option value="en">En</option>
+                                <option value="fr">Fr</option>
+                            </select>
+
                         </List>
                     </div>
                     <IconButton
