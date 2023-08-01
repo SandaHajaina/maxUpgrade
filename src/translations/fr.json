@@ -9,5 +9,28 @@
         "slogan": "Gravissez les sommets du succès grâce à une communication optimisée.",
         "text": "Votre succès numérique est entre de bonnes mains ! En tant qu'experts en communication digitale, nous proposons des solutions de premier ordre en gestion de communauté, en design graphique percutant et en marketing digital stratégique pour améliorer votre présence en ligne. Confiez-nous votre vision et ensemble, atteignons de nouveaux sommets !",
         "button": "Nous contacter"
+    },
+    "value": {
+        "title": "Voici ce qui nous différencie",
+        "description": "Ensemble, avec nos clients et partenaires, \"Max Upgrade\" a mis en œuvre des campagnes sociales significatives, contribuant à la promotion d'initiatives sociales, environnementales et humanitaires. En collaborant avec des organisations à but non lucratif, nous offrons notre expertise en communication pour soutenir des causes nobles et inspirantes. Nous croyons que la communication peut être un puissant catalyseur du changement, c'est pourquoi nous avons motivé notre créativité au service de campagnes sociales percutantes, visant à sensibiliser le public et à mobiliser la communauté pour le bien commun. Par le biais de contenu éducatif, nous cherchons à éclairer le public sur des questions sociétales cruciales, contribuant ainsi à l'enrichissement des connaissances et à l'ouverture d'esprit."
+    },
+    "team": {
+        "title": "Notre équipe",
+        "eloi": {
+            "role": "Chef de projet",
+            "description": "Fort de son expérience en tant que Responsable de projet informatique chez Max upgrade, il excelle dans le leadership technique et offre un soutien infaillible à toute l'équipe. Sa polyvalence et son expertise en informatique font de lui un atout précieux pour notre entreprise. Grâce à son dévouement à la réussite et sa capacité à relever les défis, il guide notre équipe vers le succès dans un environnement en constante évolution."
+        },
+        "sitraka": {
+            "role": "Responsable de communication",
+            "description": "En charge de la Communication, elle est une stratège créative qui conçoit des campagnes percutantes pour valoriser notre marque. Dotée de compétences rédactionnelles et interpersonnelles exceptionnelles, elle interagit efficacement avec les parties prenantes et les clients. Sa passion pour la communication et son adaptabilité aux tendances du marché font d'elle un atout inestimable, propulsant le succès de notre marque vers de nouveaux sommets."
+        },
+        "tsilavina": {
+            "role": "Graphiste",
+            "description": "Notre Graphiste apporte une brillance visuelle à nos projets. Avec un sens aigu de l'esthétique et une maîtrise des outils de conception, il crée des visuels époustouflants qui captivent notre public. En collaboration avec l'équipe, il transforme les concepts en œuvres d'art convaincantes qui laissent une impression durable. Passionné par la créativité et l'excellence, il élève la narration visuelle de notre marque à de nouveaux sommets."
+        },
+        "sanda": {
+            "role": "Développeur Web",
+            "description": "En tant que Développeur Web chez Max Upgrade, il est capable de fournir un leadership technique et un soutien à toute l'équipe pour s'assurer que les projets sont réalisés de manière efficace et efficiente. Sa polyvalence et sa capacité à s'adapter à tout type de projet font de lui un atout précieux pour l'équipe Max Upgrade."
+        }
     }
 }

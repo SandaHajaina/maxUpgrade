@@ -1,21 +1,42 @@
 import React, { useState } from 'react';
 import { TextField, Button, Container, Stack, Box, Grid, Typography } from '@mui/material';
+import axios from 'axios';
 
 const Contact = () => {
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
-    const [message, setMessage] = useState('')
+    const [message, setMessage] = useState('');
+    const [isSuccess, setIsSuccess] = useState(false);
 
     const placeholderStyle = {
         // Ajoutez ici les styles CSS que vous souhaitez appliquer au placeholder
         color: 'white'
     };
 
-    function handleSubmit(event) {
+    async function handleSubmit(event) {
         event.preventDefault();
-        console.log(firstName, lastName, email, message, phoneNumber)
+
+        const formData = new FormData();
+        formData.append('firstName', firstName);
+        formData.append('lastName', lastName);
+        formData.append('email', email);
+        formData.append('message', message);
+        formData.append('phoneNumber', phoneNumber);
+
+        //send form data to the backend api
+        try {
+            const response = await axios.post('http://localhost/max_upgrade/api.php', formData);
+
+            // La requête a réussi, vous pouvez accéder à la réponse ici
+            console.log('Réponse du serveur :', response.data);
+
+            setIsSuccess(true); // Définir l'état de succès à true après l'envoi réussi du formulaire
+        } catch (error) {
+            // En cas d'erreur, vous pouvez afficher le message d'erreur ici
+            console.error('Erreur lors de l\'envoi des données.', error);
+        }
     }
 
     return (
@@ -117,6 +138,11 @@ const Contact = () => {
                             </Grid>
                         </Grid>
                     </form>
+                    {isSuccess && (
+                        <Typography variant="body1" color="#fff" textAlign="center">
+                            Le message a été envoyé avec succès!
+                        </Typography>
+                    )}
                 </Box>
             </Container >
         </Box >

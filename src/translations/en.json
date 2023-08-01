@@ -9,5 +9,28 @@
         "slogan": "Climb to Success with Elevated Communication.",
         "text": "Your digital success is in good hands! As digital communication experts, we offer top-notch solutions in community management, impactful graphic design, and strategic digital marketing to enhance your online presence. Entrust us with your vision, and together, let's reach new heights!",
         "button": "Contact us"
+    },
+    "value": {
+        "title": "This is how we are different",
+        "description": "Together, with our clients and partners, \"Max Upgrade\" has implemented impactful social campaigns, contributing to the promotion of social, environmental, and humanitarian initiatives. By collaborating with non-profit organizations, we offer our communication expertise to support noble and inspiring causes. We believe that communication can be a powerful catalyst for change, which is why we channel our creativity into impactful social campaigns aimed at raising awareness and mobilizing the community for the common good. Through educational content, we seek to enlighten the public about crucial societal issues, thus contributing to knowledge enrichment and open-mindedness."
+    },
+    "team": {
+        "title": "Our solid team",
+        "eloi": {
+            "role": "project manager",
+            "description": "With a wealth of experience as an IT Project Manager at Max upgrade, he excels in technical leadership and provides unwavering support to the entire team. His versatility and expertise in information technology make him a valuable asset to our company. Thanks to his dedication to success and ability to tackle challenges, he guides our team towards success in an ever-evolving environment."
+        },
+        "sitraka": {
+            "role": "Communication manager",
+            "description": "In charge of Communication, she is a creative strategist who crafts impactful campaigns to elevate our brand. With exceptional writing and interpersonal skills, she engages effectively with stakeholders and clients. Her passion for communication and adaptability to market trends make her an invaluable asset, driving our brand's success to new heights."
+        },
+        "tsilavina": {
+            "role": "Graphic designer",
+            "description": "Our Graphic Designer brings visual brilliance to our projects. With a keen eye for aesthetics and mastery of design tools, he creates stunning visuals that captivate our audience. Collaborating with the team, he transforms concepts into compelling artwork that leaves a lasting impression. Passionate about creativity and excellence, he elevates our brand's visual storytelling to new heights."
+        },
+        "sanda": {
+            "role": "Web developer",
+            "description": "As an IT project manager at Max Upgrade, he is capable of providing technical leadership and support to the entire team to ensure projects are carried out effectively and efficiently. His versatility and ability to adapt to any type of project make him a valuable asset to the Max Upgrade team."
+        }
     }
 }
