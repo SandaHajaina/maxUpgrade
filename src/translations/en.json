@@ -32,5 +32,30 @@
             "role": "Web developer",
             "description": "As an IT project manager at Max Upgrade, he is capable of providing technical leadership and support to the entire team to ensure projects are carried out effectively and efficiently. His versatility and ability to adapt to any type of project make him a valuable asset to the Max Upgrade team."
         }
+    },
+    "services": {
+        "title": "What We Do ?",
+        "service": {
+            "1": "Digital Marketing",
+            "2": "Graphic design",
+            "3": "Web Developpement"
+        }
+    },
+    "contact": {
+        "title": "Contact us",
+        "firstname": "First Name",
+        "lastname": "Last Name",
+        "email": "Email",
+        "phone": "Phone number",
+        "message": "Message",
+        "button": "SEND"
+    },
+    "blog": {
+        "title": "Recent articles"
+    },
+    "newsletter": {
+        "title": "Subscribe to Our Newsletter",
+        "email": "Enter your email",
+        "button": "Subscribe"
     }
 }

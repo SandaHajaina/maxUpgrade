@@ -6,8 +6,12 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Box, Container, Grid } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 const Blog = () => {
+
+    const { t } = useTranslation();
+
     return (
         <Box sx={{ py: '12vh' }}>
             <Container>
@@ -16,7 +20,7 @@ const Blog = () => {
                     textAlign: 'center',
                     paddingBottom: '30px'
                 }}>
-                    Recent articles</Typography>
+                    {t('blog.title')}</Typography>
                 <Grid container sx={{
                     textAlign: '-webkit-center'
                 }} spacing={2}>

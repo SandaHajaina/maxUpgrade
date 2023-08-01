@@ -1,7 +1,11 @@
 import React from 'react';
 import { TextField, Button, Box, useMediaQuery, useTheme, Container, Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 const Newsletter = () => {
+
+    const { t } = useTranslation();
+
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -14,7 +18,7 @@ const Newsletter = () => {
     return (
         <Box py={12}>
             <Container>
-                <Typography variant='h2' textAlign={'center'} paddingBottom={3} color={"#185a7d"}>Subscribe to Our Newsletter</Typography>
+                <Typography variant='h2' textAlign={'center'} paddingBottom={3} color={"#185a7d"}>{t('newsletter.title')}</Typography>
                 <Box px={isMobile ? 2 : 10} textAlign="center">
                     <form onSubmit={handleSubmit}>
                         <Box
@@ -25,7 +29,7 @@ const Newsletter = () => {
                         >
                             <TextField
                                 type="email"
-                                label="Enter your email"
+                                label={t('newsletter.email')}
                                 variant="outlined"
                                 color="secondary"
                                 fullWidth
@@ -58,7 +62,7 @@ const Newsletter = () => {
                                     },
                                 }}
                             >
-                                Subscribe
+                                {t('newsletter.button')}
                             </Button>
                         </Box>
                     </form>

@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { TextField, Button, Container, Stack, Box, Grid, Typography } from '@mui/material';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+
+    const { t } = useTranslation();
+
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
@@ -56,7 +60,7 @@ const Contact = () => {
                         },
                     }}
                 >
-                    <Typography variant='h2' color={'#fff'} textAlign={'center'} paddingBottom={6}>Contact us</Typography>
+                    <Typography variant='h2' color={'#fff'} textAlign={'center'} paddingBottom={6}>{t('contact.title')}</Typography>
                     <form onSubmit={handleSubmit} action="">
                         <Grid container spacing={2}>
                             <Grid item xs={12} md={6}>
@@ -64,7 +68,7 @@ const Contact = () => {
                                     type="text"
                                     variant="outlined"
                                     color="secondary"
-                                    label="First Name"
+                                    label={t('contact.firstname')}
                                     onChange={e => setFirstName(e.target.value)}
                                     value={firstName}
                                     fullWidth
@@ -79,7 +83,7 @@ const Contact = () => {
                                     type="text"
                                     variant="outlined"
                                     color="secondary"
-                                    label="Last Name"
+                                    label={t('contact.lastname')}
                                     onChange={e => setLastName(e.target.value)}
                                     value={lastName}
                                     fullWidth
@@ -93,7 +97,7 @@ const Contact = () => {
                                     type="email"
                                     variant="outlined"
                                     color="secondary"
-                                    label="Email"
+                                    label={t('contact.email')}
                                     onChange={e => setEmail(e.target.value)}
                                     value={email}
                                     fullWidth
@@ -108,7 +112,7 @@ const Contact = () => {
                                     type="number"
                                     variant="outlined"
                                     color="secondary"
-                                    label="Phone number"
+                                    label={t('contact.phone')}
                                     onChange={e => setPhoneNumber(e.target.value)}
                                     fullWidth
                                     required
@@ -119,7 +123,7 @@ const Contact = () => {
                             </Grid>
                             <Grid item xs={12}>
                                 <TextField
-                                    label="Message"
+                                    label={t('contact.message')}
                                     multiline
                                     variant="outlined"
                                     color="secondary"
@@ -133,7 +137,7 @@ const Contact = () => {
                             </Grid>
                             <Grid item xs={12} sx={{ textAlign: 'center' }}>
                                 <Button sx={{ width: '50%' }} variant="outlined" color="secondary" type="submit">
-                                    Send
+                                    {t('contact.button')}
                                 </Button>
                             </Grid>
                         </Grid>

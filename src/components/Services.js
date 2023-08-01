@@ -4,8 +4,12 @@ import animationDev from '../assets/json/dev.json';
 import animationDesign from '../assets/json/design.json';
 import animationMarketing from '../assets/json/marketing.json';
 import LottieAnimation from './LottieAnimation';
+import { useTranslation } from 'react-i18next';
 
 const Services = () => {
+
+    const { t } = useTranslation();
+
     return (
         <Box sx={{
             py: '12vh',
@@ -13,14 +17,14 @@ const Services = () => {
         }}>
             <Container>
                 <Typography variant='h2' sx={{ color: 'primary.main' }}>
-                    What We Do ?
+                    {t('services.title')}
                 </Typography>
                 <Box>
                     <Grid container spacing={2}>
                         {/* Trois colonnes pour les écrans larges */}
                         <Grid item xs={12} sm={4}>
                             {/* Contenu de la première colonne */}
-                            <h4>Digital Marketing</h4>
+                            <h4>{t('services.service.1')}</h4>
                             <Box sx={{
                                 width: '300px',
                                 display: 'contents'
@@ -30,7 +34,7 @@ const Services = () => {
                         </Grid>
                         <Grid item xs={12} sm={4}>
                             {/* Contenu de la deuxième colonne */}
-                            <h4>Graphic design</h4>
+                            <h4>{t('services.service.2')}</h4>
                             <Box sx={{
                                 width: '300px',
                                 display: 'contents'
@@ -40,7 +44,7 @@ const Services = () => {
                         </Grid>
                         <Grid item xs={12} sm={4}>
                             {/* Contenu de la troisième colonne */}
-                            <h4>Web Developpement</h4>
+                            <h4>{t('services.service.3')}</h4>
                             <Box sx={{
                                 width: '300px',
                                 display: 'contents'

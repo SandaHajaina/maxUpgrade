@@ -32,5 +32,30 @@
             "role": "Développeur Web",
             "description": "En tant que Développeur Web chez Max Upgrade, il est capable de fournir un leadership technique et un soutien à toute l'équipe pour s'assurer que les projets sont réalisés de manière efficace et efficiente. Sa polyvalence et sa capacité à s'adapter à tout type de projet font de lui un atout précieux pour l'équipe Max Upgrade."
         }
+    },
+    "services": {
+        "title": "Que faisons-nous ?",
+        "service": {
+            "1": "Marketing Numérique",
+            "2": "Design Graphique",
+            "3": "Développement Web"
+        }
+    },
+    "contact": {
+        "title": "Contactez-nous",
+        "field_firstname": "Prénom",
+        "last_name": "Nom",
+        "email": "Email",
+        "phone": "Numéro de téléphone",
+        "message": "Message",
+        "button": "envoyer"
+    },
+    "blog": {
+        "title": "Articles récents"
+    },
+    "newsletter": {
+        "title": "Abonnez-vous à notre newsletter",
+        "email": "Entrez votre adresse e-mail",
+        "button": "S'abonner"
     }
 }
