@@ -88,7 +88,9 @@ const Menu = () => {
             <AppBar className={classes.appBar}>
                 <Toolbar>
                     <div className={classes.title}>
-                        <img className={`${classes.logo} ${classes.__logo__header}`} src="logo.png" alt="Logo" />
+                        <Link href="https://maxupgrade.vercel.app/">
+                            <img className={`${classes.logo} ${classes.__logo__header}`} src="logo.png" alt="Logo" />
+                        </Link>
                     </div>
 
                     {/* Sélecteur de langue */}
