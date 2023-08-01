@@ -51,7 +51,21 @@
         "button": "envoyer"
     },
     "blog": {
-        "title": "Articles récents"
+        "share": "Partager",
+        "more": "En savoir plus",
+        "title": "Articles récents",
+        "article1": {
+            "title": "Comment un site web peut accroitre votre business ?",
+            "description": "Dans un monde de plus en plus connecté, la présence en ligne est devenue essentielle pour toute entreprise."
+        },
+        "article2": {
+            "title": "10 raisons de faire la refonte de son site web",
+            "description": "Dans le monde numérique actuel, votre site web est souvent le premier point de contact avec vos clients. Il représente..."
+        },
+        "article3": {
+            "title": "Une application mobile peut accroitre votre business ?",
+            "description": "De nos jours, presque tout le monde utilise un smartphone. C'est une opportunité à saisir pour un..."
+        }
     },
     "newsletter": {
         "title": "Abonnez-vous à notre newsletter",

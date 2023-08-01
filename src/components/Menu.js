@@ -49,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'flex-end',
         padding: '8px',
     },
+    select: {
+        height: '20px'
+    }
 }));
 
 const Menu = () => {
@@ -112,10 +115,12 @@ const Menu = () => {
                             ))}
 
                             {/* Sélecteur de langue */}
-                            <select onChange={handleLanguageChange}>
-                                <option value="en">En</option>
-                                <option value="fr">Fr</option>
-                            </select>
+                            <ListItem>
+                                <select className={classes.select} onChange={handleLanguageChange}>
+                                    <option value="en">En</option>
+                                    <option value="fr">Fr</option>
+                                </select>
+                            </ListItem>
 
                         </List>
                     </div>

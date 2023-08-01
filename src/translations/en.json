@@ -51,7 +51,21 @@
         "button": "SEND"
     },
     "blog": {
-        "title": "Recent articles"
+        "share": "Share",
+        "more": "Learn more",
+        "title": "Recent articles",
+        "article1": {
+            "title": "How can a website boost your business?",
+            "description": "In an increasingly connected world, online presence has become essential for any business."
+        },
+        "article2": {
+            "title": "10 reasons to redesign your website",
+            "description": "In the current digital world, your website is often the first point of contact with your customers. It represents..."
+        },
+        "article3": {
+            "title": "Can a mobile application boost your business?",
+            "description": "Nowadays, nearly everyone uses a smartphone. It's an opportunity to seize for..."
+        }
     },
     "newsletter": {
         "title": "Subscribe to Our Newsletter",

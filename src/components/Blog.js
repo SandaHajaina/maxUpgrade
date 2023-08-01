@@ -35,16 +35,15 @@ const Blog = () => {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Lizard
+                                    {t('blog.article1.title')}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
+                                    {t('blog.article1.description')}
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
+                                <Button size="small">{t('blog.share')}</Button>
+                                <Button size="small">{t('blog.more')}</Button>
                             </CardActions>
                         </Card>
                     </Grid>
@@ -53,21 +52,20 @@ const Blog = () => {
                         <Card sx={{ maxWidth: 345, textAlign: 'left' }}>
                             <CardMedia
                                 sx={{ height: 240 }}
-                                image="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
+                                image="https://njakadev.com/wp-content/uploads/2023/06/img_site_1.png"
                                 title="green iguana"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Lizard
+                                    {t('blog.article2.title')}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
+                                    {t('blog.article2.description')}
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
+                                <Button size="small">{t('blog.share')}</Button>
+                                <Button size="small">{t('blog.more')}</Button>
                             </CardActions>
                         </Card>
                     </Grid>
@@ -76,21 +74,20 @@ const Blog = () => {
                         <Card sx={{ maxWidth: 345, textAlign: 'left' }}>
                             <CardMedia
                                 sx={{ height: 240 }}
-                                image="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
+                                image="https://njakadev.com/wp-content/uploads/2023/06/img_app_2.png"
                                 title="green iguana"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Lizard
+                                    {t('blog.article3.title')}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
+                                    {t('blog.article3.description')}
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
+                                <Button size="small">{t('blog.share')}</Button>
+                                <Button size="small">{t('blog.more')}</Button>
                             </CardActions>
                         </Card>
                     </Grid>
