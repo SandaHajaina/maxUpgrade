@@ -57,5 +57,10 @@
         "title": "Subscribe to Our Newsletter",
         "email": "Enter your email",
         "button": "Subscribe"
+    },
+    "footer": {
+        "email": "Email",
+        "phone": "Phone",
+        "follow": "Follow us"
     }
 }

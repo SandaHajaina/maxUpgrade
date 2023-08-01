@@ -43,8 +43,8 @@
     },
     "contact": {
         "title": "Contactez-nous",
-        "field_firstname": "Prénom",
-        "last_name": "Nom",
+        "firstname": "Prénom",
+        "lastname": "Nom",
         "email": "Email",
         "phone": "Numéro de téléphone",
         "message": "Message",
@@ -57,5 +57,10 @@
         "title": "Abonnez-vous à notre newsletter",
         "email": "Entrez votre adresse e-mail",
         "button": "S'abonner"
+    },
+    "footer": {
+        "email": "Email",
+        "phone": "Téléphone",
+        "follow": "Suivez-nous"
     }
 }

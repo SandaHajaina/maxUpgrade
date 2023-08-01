@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid";
 import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles((theme) => ({
     footer: {
@@ -26,7 +27,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Footer() {
+
     const classes = useStyles();
+    const { t } = useTranslation();
 
     return (
         <Box
@@ -41,18 +44,18 @@ export default function Footer() {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <Typography variant="h6" color="secondary.main" gutterBottom>
-                            Contact Us
+                            Contact
                         </Typography>
                         <Typography variant="body2" color="secondary.main">
-                            Email: welcome@maxupgrade.com
+                            {t('footer.email')}: welcome@maxupgrade.com
                         </Typography>
                         <Typography variant="body2" color="secondary.main">
-                            Phone: +261 341 234 567
+                            {t('footer.phone')}: +261 341 234 567
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <Typography variant="h6" color="secondary.main" gutterBottom>
-                            Follow Us
+                            {t('footer.follow')}
                         </Typography>
                         <Link href="https://www.facebook.com/" color="inherit">
                             <Facebook />
