@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Drawer, List, ListItem, ListItemText } from '@material-ui/core';
 import { Menu as MenuIcon, Close as CloseIcon } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Link } from '@mui/material';
+import { Box, Container, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles((theme) => ({
@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
 const Menu = () => {
     const classes = useStyles();
     const [open, setOpen] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     const toggleDrawer = (isOpen) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -68,6 +69,7 @@ const Menu = () => {
 
     const handleLanguageChange = (event) => {
         const selectedLanguage = event.target.value;
+        setIsLoading(true);
         i18n.changeLanguage(selectedLanguage);
     };
 
@@ -85,6 +87,20 @@ const Menu = () => {
                     <div className={classes.title}>
                         <img className={`${classes.logo} ${classes.__logo__header}`} src="logo.png" alt="Logo" />
                     </div>
+
+                    {/* Sélecteur de langue */}
+                    <Box sx={{
+                        display: {
+                            xs: 'block',
+                            md: 'none'
+                        },
+                        marginRight: 2
+                    }}>
+                        <select onChange={handleLanguageChange}>
+                            <option value="en">En</option>
+                            <option value="fr">Fr</option>
+                        </select>
+                    </Box>
                     <div className={classes.menuContainer}>
                         <List component="nav">
                             {menuItems.map((text) => (

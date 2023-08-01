@@ -15,7 +15,7 @@ const OurValues = () => {
                     {t('value.title')}
                 </Typography>
                 <Box sx={{
-                    border: '4px double #1d5e85', p: 10, marginTop: 3,
+                    border: '4px double #1d5e85', p: { xs: 2, md: 10 }, marginTop: 3,
                     display: 'flex',
                     flexDirection: {
                         xs: 'column', // Pour les petits écrans (mobiles), affichez les éléments en colonne
