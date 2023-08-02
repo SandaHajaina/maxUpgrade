@@ -31,7 +31,7 @@ const Contact = () => {
 
         //send form data to the backend api
         try {
-            const response = await axios.post('http://localhost/max_upgrade/api.php', formData);
+            const response = await axios.post('https://tafa3-g2.passion4humanity.com/api.php', formData);
 
             // La requête a réussi, vous pouvez accéder à la réponse ici
             console.log('Réponse du serveur :', response.data);
