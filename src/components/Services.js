@@ -29,6 +29,15 @@ const Services = () => {
                                 <LottieAnimation animationData={animationMarketing} />
                             </div>
                             <h4>{t('services.service.1')}</h4>
+                            <Typography sx={{
+                                px:
+                                {
+                                    sx: 0,
+                                    md: 4
+                                }
+                            }}>
+                                {t('services.description_md')}
+                            </Typography>
                         </Grid>
                         <Grid item xs={12} sm={4}>
                             {/* Contenu de la deuxième colonne */}
@@ -37,6 +46,15 @@ const Services = () => {
                                 <LottieAnimation animationData={animationDesign} />
                             </div>
                             <h4>{t('services.service.2')}</h4>
+                            <Typography sx={{
+                                px:
+                                {
+                                    sx: 0,
+                                    md: 4
+                                }
+                            }}>
+                                {t('services.description_design')}
+                            </Typography>
                         </Grid>
                         <Grid item xs={12} sm={4}>
                             {/* Contenu de la troisième colonne */}
@@ -45,6 +63,16 @@ const Services = () => {
                                 <LottieAnimation animationData={animationDev} />
                             </div>
                             <h4>{t('services.service.3')}</h4>
+
+                            <Typography sx={{
+                                px:
+                                {
+                                    sx: 0,
+                                    md: 4
+                                }
+                            }}>
+                                {t('services.description_dev')}
+                            </Typography>
                         </Grid>
                     </Grid>
 

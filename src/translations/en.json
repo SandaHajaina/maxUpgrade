@@ -39,7 +39,10 @@
             "1": "Digital Marketing",
             "2": "Graphic design",
             "3": "Web Developpement"
-        }
+        },
+        "description_dev": "Web development is the foundation of any successful online presence. Your expertise in web development will enable businesses to have functional, user-friendly, and mobile-responsive websites, which are essential for attracting and retaining visitors.",
+        "description_md": "Digital marketing is another crucial aspect to help businesses increase their online visibility and attract new customers. Through well-crafted digital marketing strategies such as SEO, online advertising, social media campaigns, and email marketing, you can help your clients effectively reach their target audience and boost their profitability.",
+        "description_design": "Design is a critical element of the user experience online. An attractive and well-thought-out design can not only capture visitors' attention but also convey the brand's identity and values. Your design expertise will enable your clients to visually stand out and create a memorable brand image."
     },
     "contact": {
         "title": "Contact us",

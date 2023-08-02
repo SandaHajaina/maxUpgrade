@@ -39,7 +39,10 @@
             "1": "Marketing Numérique",
             "2": "Design Graphique",
             "3": "Développement Web"
-        }
+        },
+        "description_dev": "Le développement web est la base de toute présence en ligne réussie. Votre expertise en matière de développement web permettra aux entreprises de disposer de sites web fonctionnels, conviviaux et adaptés aux appareils mobiles, ce qui est essentiel pour attirer et retenir les visiteurs.",
+        "description_md": "Le marketing digital est un autre aspect crucial pour aider les entreprises à augmenter leur visibilité en ligne et à attirer de nouveaux clients. Grâce à des stratégies de marketing numérique bien conçues, telles que le référencement, la publicité en ligne, les campagnes sur les réseaux sociaux et l'email marketing, vous pouvez aider vos clients à atteindre leur public cible de manière efficace et à accroître leur rentabilité.",
+        "description_design": "Le design est un élément essentiel de l'expérience en ligne des utilisateurs. Un design attrayant et bien pensé peut non seulement aider à capter l'attention des visiteurs, mais aussi à transmettre l'identité et les valeurs de la marque. Votre expertise en design permettra à vos clients de se démarquer visuellement et de créer une image de marque mémorable."
     },
     "contact": {
         "title": "Contactez-nous",

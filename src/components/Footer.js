@@ -57,17 +57,18 @@ export default function Footer() {
                         <Typography variant="h6" color="secondary.main" gutterBottom>
                             {t('footer.follow')}
                         </Typography>
-                        <Link href="https://www.facebook.com/" color="inherit">
+                        <Link href="https://www.facebook.com/profile.php?id=100095018467898" target="_blank" color="inherit">
                             <Facebook />
                         </Link>
                         <Link
-                            href="https://www.instagram.com/"
+                            href="https://www.instagram.com/maxupgrade2/"
+                            target="_blank"
                             color="inherit"
                             sx={{ pl: 1, pr: 1 }}
                         >
                             <Instagram />
                         </Link>
-                        <Link href="https://www.twitter.com/" color="inherit">
+                        <Link href="https://www.linkedin.com/company/97848598/admin/feed/posts/" target="_blank" color="inherit">
                             <LinkedIn />
                         </Link>
                     </Grid>
