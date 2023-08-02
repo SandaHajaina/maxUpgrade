@@ -20,37 +20,31 @@ const Services = () => {
                     {t('services.title')}
                 </Typography>
                 <Box>
-                    <Grid container spacing={2}>
+                    <Grid container marginTop={4} spacing={2}>
                         {/* Trois colonnes pour les écrans larges */}
                         <Grid item xs={12} sm={4}>
                             {/* Contenu de la première colonne */}
-                            <h4>{t('services.service.1')}</h4>
-                            <Box sx={{
-                                width: '300px',
-                                display: 'contents'
-                            }}>
+
+                            <div className='animation'>
                                 <LottieAnimation animationData={animationMarketing} />
-                            </Box>
+                            </div>
+                            <h4>{t('services.service.1')}</h4>
                         </Grid>
                         <Grid item xs={12} sm={4}>
                             {/* Contenu de la deuxième colonne */}
-                            <h4>{t('services.service.2')}</h4>
-                            <Box sx={{
-                                width: '300px',
-                                display: 'contents'
-                            }}>
+
+                            <div className='animation'>
                                 <LottieAnimation animationData={animationDesign} />
-                            </Box>
+                            </div>
+                            <h4>{t('services.service.2')}</h4>
                         </Grid>
                         <Grid item xs={12} sm={4}>
                             {/* Contenu de la troisième colonne */}
-                            <h4>{t('services.service.3')}</h4>
-                            <Box sx={{
-                                width: '300px',
-                                display: 'contents'
-                            }}>
+
+                            <div className='animation'>
                                 <LottieAnimation animationData={animationDev} />
-                            </Box>
+                            </div>
+                            <h4>{t('services.service.3')}</h4>
                         </Grid>
                     </Grid>
 
